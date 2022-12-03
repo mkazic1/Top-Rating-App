@@ -1,0 +1,17 @@
+.input {
+    padding: 12px 20px 12px 40px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 2px black;
+    outline: none;
+    cursor: pointer;
+    background-image: url('/src/assets/search-icon.png');
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    font-size: 1rem;
+}
+
+input:hover {
+    box-shadow: 0px 1px 5px black;
+}
