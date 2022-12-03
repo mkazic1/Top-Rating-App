@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    margin: 25px;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+}
+
+.button {   
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
