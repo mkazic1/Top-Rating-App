@@ -1,17 +1,15 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Movies from './components/Movies';
-import NotFoundPage from './components/NotFoundPage';
-import Overview from './components/Overview';
-import TvShows from './components/TvShows';
+import Header from './components/HeaderBar/Header';
+import Overview from './components/Overview/Overview';
+import NotFoundPage from './components/NotFound/NotFoundPage';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+      <Header/>
       <Routes>
         <Route path="/" element={<Overview/>}/>
-        <Route path="/movies" element={<Movies/>}/>
-        <Route path="/tvshows" element={<TvShows/>}/>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
