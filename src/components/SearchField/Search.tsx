@@ -1,9 +1,14 @@
 import React from 'react';
+import SearchInterface from './SearchInterface';
 import styles from './Search.module.css';
+import buttonStyles from '../../style/CommonStyle.module.css';
 
-const Search: React.FC = () => {
+const Search = (props: SearchInterface) => {
   return (
-    <input className={styles.input} type="text" placeholder="Search..."/>
+    <form className={styles['input-button-container']} onSubmit={props.onSubmit}>
+      <input className={styles.input} type="text" placeholder="Search..." onChange={props.onChange} value={props.query}/>
+      <button className={buttonStyles.button}>Search</button>
+    </form>
   );
 }
 
