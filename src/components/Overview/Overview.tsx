@@ -7,19 +7,19 @@ import styles from './Overview.module.css';
 const Overview: React.FC = () => {
   const [displayedTvShows, setDisplayedTvShows] = useState(true);
 
-  const onClickMovies = (): void => {
+  const handlenOnClickMovies = (): void => {
     setDisplayedTvShows(false);
   }
 
-  const onClickTvShows = (): void => {
+  const handleOnClickTvShows = (): void => {
     setDisplayedTvShows(true);
   }
 
   return (
     <div className={styles.container}>
       <div className={styles['buttons-container']}>
-        <button className={styles.button} onClick={onClickMovies}>MOVIES</button>
-        <button className={styles.button} onClick={onClickTvShows}>TV SHOWS</button>
+        <button className={styles.button} onClick={handlenOnClickMovies}>MOVIES</button>
+        <button className={styles.button} onClick={handleOnClickTvShows}>TV SHOWS</button>
       </div>
       <Search/>
       {displayedTvShows ? <TvShows /> : <Movies/>}
