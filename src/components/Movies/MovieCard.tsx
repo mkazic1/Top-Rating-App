@@ -10,7 +10,7 @@ const MovieCard = (props: MoviesInterface) => {
       <img className={styles.image} src={API_IMG + props.poster_path} />
       <div className={styles.body}>
         <h3 className={styles.title}>{props.title}</h3>
-        <button className={styles.button}>Details</button>
+        <button className={styles['card-button']}>Details</button>
       </div>
     </div>
   );
