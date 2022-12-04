@@ -1,0 +1,86 @@
+.image {
+    width: 460px;
+    height: 300px;;
+}
+
+.title {
+    color: white;
+}
+
+.card {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 15px black;
+}
+
+.body {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.button {   
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.card-button {   
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.card-button:focus {   
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+
+.button:focus {
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+}
+
+.grid-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+  
+.grid{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    gap: 5px;
+}
