@@ -14,6 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+## IMPORTANT
+
+Make a new .env file on the root level inside which you should have your API key in following format:\
+REACT_APP_API=PASTE_YOUR_API_KEY
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
