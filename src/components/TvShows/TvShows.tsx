@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TvShowCard from './TvShowCard';
 import TvShowsInterface from './TvShowsInterface';
-import styles from '../CommonStyle.module.css';
+import styles from '../../style/CommonStyle.module.css';
 
 const API_KEY = process.env.REACT_APP_API;
 const API_TV_URL = 'https://api.themoviedb.org/3/tv/top_rated?api_key=' + API_KEY;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TvShowsInterface from './TvShowsInterface';
-import styles from '../CommonStyle.module.css';
+import styles from '../../style/CommonStyle.module.css';
 
 const API_IMG = 'https://image.tmdb.org/t/p/w500/'
 
