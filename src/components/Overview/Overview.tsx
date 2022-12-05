@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Movies from '../Movies/Movies';
 import TvShows from '../TvShows/TvShows';
-import styles from './Overview.module.css';
+import styles from '../../style/Overview.module.css';
 import buttonStyles from '../../style/CommonStyle.module.css';
 
 const Overview: React.FC = () => {

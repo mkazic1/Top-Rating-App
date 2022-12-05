@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchInterface from './SearchInterface';
-import styles from './Search.module.css';
+import styles from '../../style/Search.module.css';
 import buttonStyles from '../../style/CommonStyle.module.css';
 
 const Search = (props: SearchInterface) => {
