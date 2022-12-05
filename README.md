@@ -27,7 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-## NOTES FOR REVIEWRS
+## NOTES for reviewers
 The reason why I am writing this is because this project was developed as a part of testing process which had a 7 days deadline.
 I'm leaving this "NOTES" section here as a reminder for developers and recruiters who will review my work.\
 This application is not fully finished and the development will be continued after the review, because my time is out.\
