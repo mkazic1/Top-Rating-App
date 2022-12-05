@@ -3,19 +3,20 @@ import MovieCard from './MovieCard';
 import MoviesInterface from '../../interfaces/MoviesInterface';
 import Search from '../SearchField/Search';
 import styles from '../../style/CommonStyle.module.css';
+import { API_MOVIES_URL, API_SEARCH_URL } from '../../constants/url';
 
 const API_KEY = process.env.REACT_APP_API;
-const API_MOVIES_URL = 'https://api.themoviedb.org/3/movie/top_rated?api_key=' + API_KEY;
+const MOVIES_URL = API_MOVIES_URL + API_KEY;
 
 const Movies: React.FC = () => {
   const [movies, setMovies] = useState([]);
   const [query, setQuery] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const API_SEARCH_URL = 'https://api.themoviedb.org/3/search/movie?api_key=' + API_KEY + '&query=' + query;
+  const SEARCH_URL = API_SEARCH_URL + API_KEY + '&query=' + query;
 
   useEffect(() => {
-    fetch(API_MOVIES_URL)
+    fetch(MOVIES_URL)
       .then(async (data) => await data.json())
       .then(data => {
         setMovies(data.results);
@@ -28,7 +29,7 @@ const Movies: React.FC = () => {
     setIsLoaded(false);
     e.preventDefault();
     try {
-      const res = await fetch(API_SEARCH_URL);
+      const res = await fetch(SEARCH_URL);
       const data = await res.json();
       setMovies(data.results);
       setIsLoaded(true);
