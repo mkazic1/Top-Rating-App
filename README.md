@@ -28,4 +28,5 @@ In case of need rerun the app with `npm start`.
 ## NOTES FOR REVIEWRS
 The reason why I am writing this is because this project was developed as a part of testing process which had a 7 days deadline.
 I'm leaving this "NOTES" section here as a reminder for developers and recruiters who will review my work.\
-This application is not fully finished and the development will be continued after the review, because my time is out.
+This application is not fully finished and the development will be continued after the review, because my time is out.\
+Main thing that I didn't manage to finish was Redux. I have started setting it up what you will see in the code, but unfortunately didn't manage to finish it.
