@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Movies from '../Movies/Movies';
 import TvShows from '../TvShows/TvShows';
 import styles from '../../style/Overview.module.css';
-import buttonStyles from '../../style/CommonStyle.module.css';
 
 const Overview: React.FC = () => {
   const [displayedTvShows, setDisplayedTvShows] = useState(true);
@@ -17,9 +16,9 @@ const Overview: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <div className={buttonStyles['buttons-container']}>
-        <button className={buttonStyles.button} onClick={handlenOnClickMovies}>MOVIES</button>
-        <button className={buttonStyles.button} onClick={handleOnClickTvShows}>TV SHOWS</button>
+      <div className={styles['buttons-container']}>
+        <button className={styles.button} onClick={handlenOnClickMovies}>MOVIES</button>
+        <button className={styles.button} onClick={handleOnClickTvShows}>TV SHOWS</button>
       </div>
       {displayedTvShows ? <TvShows /> : <Movies/>}
     </div>

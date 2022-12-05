@@ -42,7 +42,6 @@ const TvShows: React.FC = () => {
   }
 
   const topTenTvShows: TvShowsInterface[] = tvShows.slice(0, 10);
-  console.log(topTenTvShows);
 
   return (
     <div>
