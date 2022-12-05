@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TvShowCard from './TvShowCard';
-import TvShowsInterface from '../../interfaces/TvShowsInterface';
 import Search from '../SearchField/Search';
+import TvShowsInterface from '../../interfaces/TvShowsInterface';
 import styles from '../../style/CommonStyle.module.css';
 import { API_TVSHOWS_URL, API_SEARCH_URL_TV } from '../../constants/url';
 

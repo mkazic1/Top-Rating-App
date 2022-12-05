@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HOME } from '../../constants/routes';
 import Logo from '../../assets/app-icon-white.png';
 import styles from '../../style/Header.module.css';
+import { HOME } from '../../constants/routes';
 
 const Header: React.FC = () => {
   return (

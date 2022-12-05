@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MovieCard from './MovieCard';
-import MoviesInterface from '../../interfaces/MoviesInterface';
 import Search from '../SearchField/Search';
+import MoviesInterface from '../../interfaces/MoviesInterface';
 import styles from '../../style/CommonStyle.module.css';
 import { API_MOVIES_URL, API_SEARCH_URL_MOVIES } from '../../constants/url';
 

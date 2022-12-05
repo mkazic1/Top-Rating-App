@@ -1,8 +1,8 @@
 /* eslint-disable indent */
 import { Reducer } from 'redux';
-import { SEARCH_MOVIES } from '../../constants';
 import MoviesInitialStateInterface from '../../interfaces/MoviesInitialStateInterface';
 import PayloadActionInterface from '../../interfaces/PayloadActionInterface';
+import { SEARCH_MOVIES } from '../../constants';
 
 const initialState: MoviesInitialStateInterface = {
   searchTerm: '',

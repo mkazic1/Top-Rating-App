@@ -1,8 +1,8 @@
 /* eslint-disable indent */
 import { Reducer } from 'react';
-import { SEARCH_TVSHOWS } from '../../constants';
 import TvShowsInitialStateInterface from '../../interfaces/TvShowsInitialStateInterface';
 import PayloadActionInterface from '../../interfaces/PayloadActionInterface';
+import { SEARCH_TVSHOWS } from '../../constants';
 
 const initialState: TvShowsInitialStateInterface = {
   searchTerm: '',
