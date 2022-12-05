@@ -15,15 +15,10 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## IMPORTANT
-Generate a API key on this page [https://www.themoviedb.org/](https://www.themoviedb.org/).\
-Make a new .env file on the root level inside which you should have your API key in following format:\
-REACT_APP_API=PASTE_YOUR_API_KEY\
+Generate an API key on this page [https://www.themoviedb.org/](https://www.themoviedb.org/).\
+Make a new .env file on the root level of the project (same level as src, public folders) inside which you should have your generated API key in following format:\
+REACT_APP_API=PASTE_YOUR_API_KEY_HERE\
 In case of need rerun the app with `npm start`.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
