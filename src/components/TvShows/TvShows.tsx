@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import TvShowCard from './TvShowCard';
-import TvShowsInterface from '../../interfaces/TvShowsInterface';
 import Search from '../SearchField/Search';
+import TvShowsInterface from '../../interfaces/TvShowsInterface';
 import styles from '../../style/CommonStyle.module.css';
-import { API_TVSHOWS_URL, API_SEARCH_URL } from '../../constants/url';
+import { API_TVSHOWS_URL, API_SEARCH_URL_TV } from '../../constants/url';
 
 const API_KEY = process.env.REACT_APP_API;
 const TV_URL = API_TVSHOWS_URL + API_KEY;
@@ -13,7 +13,7 @@ const TvShows: React.FC = () => {
   const [query, setQuery] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const SEARCH_URL = API_SEARCH_URL + API_KEY + '&query=' + query;
+  const SEARCH_URL = API_SEARCH_URL_TV + API_KEY + '&query=' + query;
 
   useEffect(() => {
     fetch(TV_URL)
