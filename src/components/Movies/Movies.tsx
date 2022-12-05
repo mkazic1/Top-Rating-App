@@ -10,6 +10,7 @@ const API_MOVIES_URL = 'https://api.themoviedb.org/3/movie/top_rated?api_key=' +
 const Movies: React.FC = () => {
   const [movies, setMovies] = useState([]);
   const [query, setQuery] = useState('');
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const API_SEARCH_URL = 'https://api.themoviedb.org/3/search/movie?api_key=' + API_KEY + '&query=' + query;
 
@@ -18,16 +19,19 @@ const Movies: React.FC = () => {
       .then(async (data) => await data.json())
       .then(data => {
         setMovies(data.results);
+        setIsLoaded(true);
       }
       )
   }, []);
 
   const searchMovies = async (e: any) => {
+    setIsLoaded(false);
     e.preventDefault();
     try {
       const res = await fetch(API_SEARCH_URL);
       const data = await res.json();
       setMovies(data.results);
+      setIsLoaded(true);
     } catch (e) {
       console.log(e);
     }
@@ -46,14 +50,21 @@ const Movies: React.FC = () => {
         onChange={handleChange}
         onSubmit={searchMovies}/>
       <div className={styles['grid-container']}>
-        <div className={styles.grid}>
-          {topTenMovies?.map((movie) => <MovieCard key={movie?.id} {...movie}/>)}
-        </div>
-        <div>
-          {
-            !movies?.length && <h1>Movies could not be found!</h1>
-          }
-        </div>
+        {!isLoaded
+          ? (<div>
+            <h1>Loading...</h1>
+          </div>)
+          : (<>
+            <div className={styles.grid}>
+              {topTenMovies?.map((movie) => <MovieCard key={movie?.id} {...movie}/>)}
+            </div>
+            <div>
+              {
+                !movies?.length ? <h1>Movies could not be found!</h1> : null
+              }
+            </div>
+          </>)
+        }
       </div>
     </div>
   );
