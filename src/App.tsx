@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Header from './components/HeaderBar/Header';
 import Overview from './components/Overview/Overview';
 import NotFoundPage from './components/NotFound/NotFoundPage';
+import { HOME } from './constants/routes';
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <Header/>
       <Routes>
         <Route path="/" element={<Overview/>}/>
+        <Route path={HOME} element={<Overview/>}/>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
