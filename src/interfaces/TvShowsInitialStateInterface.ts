@@ -1,4 +1,4 @@
-import TvShowsInterface from '../components/TvShows/TvShowsInterface'
+import TvShowsInterface from './TvShowsInterface'
 
 export default interface TvShowsInitialStateInterface {
   searchTerm: string

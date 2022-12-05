@@ -1,4 +1,4 @@
-import MoviesInterface from '../components/Movies/MoviesInterface'
+import MoviesInterface from './MoviesInterface'
 
 export default interface MoviesInitialStateInterface {
   searchTerm: string

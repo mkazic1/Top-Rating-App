@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchInterface from './SearchInterface';
+import SearchInterface from '../../interfaces/SearchInterface';
 import styles from '../../style/Search.module.css';
 import buttonStyles from '../../style/CommonStyle.module.css';
 
