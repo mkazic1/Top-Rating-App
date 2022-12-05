@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import TvShowsInterface from '../../interfaces/TvShowsInterface';
 import styles from '../../style/CommonStyle.module.css';
 import { API_IMG } from '../../constants/url';
-import { TVSHOWS } from '../../constants/routes';
 
 const TvShowCard = (props: TvShowsInterface) => {
   return (
