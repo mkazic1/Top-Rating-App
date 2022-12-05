@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/app-icon-white.png';
-import styles from './Header.module.css';
+import styles from '../../style/Header.module.css';
 
 const Header: React.FC = () => {
   return (

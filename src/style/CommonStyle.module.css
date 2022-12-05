@@ -20,7 +20,7 @@
 }
 
 .body {
-    padding: 10px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,7 +42,6 @@
 
 .card-button {   
     padding: 15px;
-    margin: 10px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
