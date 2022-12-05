@@ -3,7 +3,7 @@ import MovieCard from './MovieCard';
 import MoviesInterface from '../../interfaces/MoviesInterface';
 import Search from '../SearchField/Search';
 import styles from '../../style/CommonStyle.module.css';
-import { API_MOVIES_URL, API_SEARCH_URL } from '../../constants/url';
+import { API_MOVIES_URL, API_SEARCH_URL_MOVIES } from '../../constants/url';
 
 const API_KEY = process.env.REACT_APP_API;
 const MOVIES_URL = API_MOVIES_URL + API_KEY;
@@ -13,7 +13,7 @@ const Movies: React.FC = () => {
   const [query, setQuery] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const SEARCH_URL = API_SEARCH_URL + API_KEY + '&query=' + query;
+  const SEARCH_URL = API_SEARCH_URL_MOVIES + API_KEY + '&query=' + query;
 
   useEffect(() => {
     fetch(MOVIES_URL)
