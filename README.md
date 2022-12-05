@@ -1,10 +1,15 @@
-# Getting Started with Create React App
+# Top Rating App
+
+## Description
+The main goal of this application is to have the functionalities of displaying the top 10 rated TV shows and the top 10 movies, a search function for both, and a detailed view for individual items.\
+This is a full frontend application developed using React and TypeScript.\
+TheMovieDB API was used for fetching data.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you should first run:
 
 ## `npm install` then `npm start`
 
@@ -15,33 +20,12 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## IMPORTANT
-Generate an API key on this page [https://www.themoviedb.org/](https://www.themoviedb.org/).\
-Make a new .env file on the root level of the project (same level as src, public folders) inside which you should have your generated API key in following format:\
+Generate an API key on this page [https://www.themoviedb.org/](https://www.themoviedb.org/) or if you have a valid one use it as described down below.\
+Make a new .env file on the root level of the project (same level as src, public folders etc). Inside the env file you should have your generated API key in the following format:\
 REACT_APP_API=PASTE_YOUR_API_KEY_HERE\
 In case of need rerun the app with `npm start`.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## NOTES FOR REVIEWRS
+The reason why I am writing this is because this project was developed as a part of testing process which had a 7 days deadline.
+I'm leaving this "NOTES" section here as a reminder for developers and recruiters who will review my work.\
+This application is not fully finished and the development will be continued after the review, because my time is out.
