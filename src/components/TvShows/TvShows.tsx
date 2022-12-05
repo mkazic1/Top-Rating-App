@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import TvShowCard from './TvShowCard';
-import TvShowsInterface from './TvShowsInterface';
+import TvShowsInterface from '../../interfaces/TvShowsInterface';
 import Search from '../SearchField/Search';
 import styles from '../../style/CommonStyle.module.css';
 

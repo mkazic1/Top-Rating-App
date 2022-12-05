@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TvShowsInterface from './TvShowsInterface';
+import TvShowsInterface from '../../interfaces/TvShowsInterface';
 import styles from '../../style/CommonStyle.module.css';
 
 const API_IMG = 'https://image.tmdb.org/t/p/w500/'

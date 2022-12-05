@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MovieCard from './MovieCard';
-import MoviesInterface from './MoviesInterface';
+import MoviesInterface from '../../interfaces/MoviesInterface';
 import Search from '../SearchField/Search';
 import styles from '../../style/CommonStyle.module.css';
 
