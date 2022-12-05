@@ -1,3 +1,7 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .image {
     width: 460px;
     height: 300px;;
@@ -38,6 +42,7 @@
     cursor: pointer;
     background-color: black;
     color: white;
+    font-weight: 700;
 }
 
 .card-button {   
@@ -47,6 +52,7 @@
     cursor: pointer;
     background-color: white;
     color: black;
+    font-weight: 700;
 }
 
 .card-button:focus {   
