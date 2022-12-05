@@ -16,6 +16,7 @@ You will also see any lint errors in the console.
 
 ## IMPORTANT
 
+Generate an API key on this page [https://www.themoviedb.org](https://www.themoviedb.org).\
 Make a new .env file on the root level inside which you should have your API key in following format:\
 REACT_APP_API=PASTE_YOUR_API_KEY\
 In case of need rerun the app with `npm start`.
